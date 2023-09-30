@@ -1,0 +1,128 @@
+
+body, html {
+    
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.link{
+    text-decoration: none;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+.logo{
+    width: 60%;    
+    
+   
+    text-align: center;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: (-50%,-50%);
+    
+}
+
+
+#fondo{
+    display: flex;
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    
+    
+    
+}
+
+.boton-flotante {
+        background-color: #0000006d;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 10px;
+        font-size: 30px;
+        cursor: pointer;
+        box-shadow:0px 0px 100px 5px rgb(0, 0, 0); /* Sombra para darle un aspecto flotante */
+        font-family: 'Playfair Display', serif;
+        
+}
+
+
+
+.centro {
+       color: white;
+        padding: 5px 6px;
+        border-radius: 13px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid #000000;
+    }
+
+
+
+.map{
+        background-color: #ffe1a6;
+        color: white;
+        padding: 5px 6px;
+        text-align: center;
+        position: absolute;
+        bottom: -30%;
+        left: 50%;
+        transform: translate(-50%, -0%);
+        width: 100%;
+        
+    }
+
+.map p{
+    font-size: x-large;
+    color: #ffffff; 
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+
+}
+
+
+@media (min-width: 720px) { 
+    /* Estilos para pantallas con un ancho máximo de 720px */ 
+    #fondo {  
+        display: flex;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    } 
+    .boton-flotante {
+        background-color: #0000006d;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 30px;
+        cursor: pointer;
+        box-shadow:0px 0px 100px 5px rgb(0, 0, 0); /* Sombra para darle un aspecto flotante */
+        font-family: 'Playfair Display', serif;
+    }
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Opacidad inicial (invisible) */
+        background-color: #000000;
+    }
+    to {
+        opacity: 1; /* Opacidad final (completamente visible) */
+        background-color: #000000;
+    }
+}
+
